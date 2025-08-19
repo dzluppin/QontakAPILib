@@ -16,9 +16,9 @@ public class Qontak {
     private static final String CLIENT_SECRET = "";
     private static final String USERNAME = "";
     private static final String PASSWORD = "";
-    private static final String ACCESS_TOKEN_TEST = "WfLZntjWKuuCXJzbNuNxJ1l28J803Q8pYi6N9URX12k";
-    public static final String CHANNEL_ID_TEST = "f7b0e1b3-eb77-4c0b-a7b0-c9d63a174dc4";
-    public static final String TEMPLATE_TEST = "6242aa10-a7ac-4655-be41-f8fb1b8ddcde";
+    private static final String ACCESS_TOKEN_TEST = "";
+    public static final String CHANNEL_ID_TEST = "";
+    public static final String TEMPLATE_TEST = "";
 
     private final OkHttpClient client;
     private final ObjectMapper mapper;
