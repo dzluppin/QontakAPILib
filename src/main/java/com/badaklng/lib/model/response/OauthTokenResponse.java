@@ -1,13 +1,13 @@
 package com.badaklng.lib.model.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.datatype.jsr310.deser.InstantDeserializer;
-import com.fasterxml.jackson.datatype.jsr310.ser.InstantSerializer;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.Instant;
 
+@Data
+@NoArgsConstructor
 public class OauthTokenResponse {
     private String access_token;
     private String token_type;
@@ -15,50 +15,5 @@ public class OauthTokenResponse {
     private String refresh_token;
 
     @JsonProperty("created_at")
-    @JsonDeserialize(using = InstantDeserializer.class)
-    @JsonSerialize(using = InstantSerializer.class)
     private Instant created_at;
-
-    public OauthTokenResponse() {
-    }
-
-    public String getAccess_token() {
-        return access_token;
-    }
-
-    public void setAccess_token(String access_token) {
-        this.access_token = access_token;
-    }
-
-    public String getToken_type() {
-        return token_type;
-    }
-
-    public void setToken_type(String token_type) {
-        this.token_type = token_type;
-    }
-
-    public long getExpires_in() {
-        return expires_in;
-    }
-
-    public void setExpires_in(long expires_in) {
-        this.expires_in = expires_in;
-    }
-
-    public String getRefresh_token() {
-        return refresh_token;
-    }
-
-    public void setRefresh_token(String refresh_token) {
-        this.refresh_token = refresh_token;
-    }
-
-    public Instant getCreated_at() {
-        return created_at;
-    }
-
-    public void setCreated_at(Instant created_at) {
-        this.created_at = created_at;
-    }
 }

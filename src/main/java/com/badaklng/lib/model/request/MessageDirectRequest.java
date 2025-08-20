@@ -1,5 +1,6 @@
 package com.badaklng.lib.model.request;
 
+import com.badaklng.lib.model.QONTAK_API_ENDPOINT;
 import com.badaklng.lib.model.request.util.Language;
 import com.badaklng.lib.model.request.util.Parameter;
 import com.badaklng.lib.model.request.util.TemplateParameter;
@@ -10,7 +11,7 @@ import lombok.Data;
 
 @Data
 public class MessageDirectRequest {
-    public static final String API_URL = "/api/open/v1/broadcasts/whatsapp/direct";
+    public static final String API_URL = QONTAK_API_ENDPOINT.WA_MSG_OUT_DIRECT.getUrl();
     private String to_number;
     private String to_name;
 

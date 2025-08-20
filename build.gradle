@@ -13,8 +13,6 @@ dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.34'
     annotationProcessor 'org.projectlombok:lombok:1.18.34'
 
-    // Apache HttpClient untuk HTTP request (Java 8 compatible)
-//    implementation 'org.apache.httpcomponents:httpclient:4.5.13'
     implementation 'com.squareup.okhttp3:okhttp:4.12.0'
 
     // Jackson Core & Databind
